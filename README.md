@@ -43,13 +43,13 @@ python src/One_Line_Tracking.py
 ### 2. Hardware	(Robot Car)
 
 Robot car front:<br>
-<img src="assets/car_front.HEIC" alt="Diagram" width="150">
+<img src="assets/car_front.HEIC" alt="Diagram" width="250">
 
 Robot car top:<br>
-<img src="assets/car_top.HEIC" alt="Diagram" width="150">
+<img src="assets/car_top.HEIC" alt="Diagram" width="250">
 
 Robot car bottom:<br>
-<img src="assets/car_bottom.HEIC" alt="Diagram" width="150">
+<img src="assets/car_bottom.HEIC" alt="Diagram" width="250">
 
 
 ## Next Steps
