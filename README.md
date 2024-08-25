@@ -23,7 +23,7 @@ Car_Line_Tracking/
 
 - Python 3.7+
 - opencv
-- RPi.GPIO as gpio
+- RPi.GPIO
 
 You can install the necessary packages using the following command:
 
