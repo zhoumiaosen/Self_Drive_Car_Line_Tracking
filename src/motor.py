@@ -1,11 +1,11 @@
 import time
 import RPi.GPIO as GPIO
 
-
-
 GPIO.setwarnings(False) # Ignore some insignificant errors
 GPIO.setmode(GPIO.BCM) # There are three encoding methods for the GPIO port of the Raspberry Pi, we choose BCM encoding to define the GPIO port
-''' The following code defines the GPIO used to control the L298N chip. This definition is different for different Raspberry Pi
+
+''' 
+The following code defines the GPIO used to control the L298N chip. This definition is different for different Raspberry Pi
 driver boards.
 '''
 Motor_A_EN = 4
@@ -23,6 +23,7 @@ def motorStop(): # Stop motor rotation
     GPIO.output(Motor_B_Pin2, GPIO.LOW)
     GPIO.output(Motor_A_EN, GPIO.LOW)
     GPIO.output(Motor_B_EN, GPIO.LOW)
+
 def setup(): # GPIO initialization, GPIO motor cannot be controlled without initialization
     global pwm_A, pwm_B
     GPIO.setwarnings(False)
@@ -39,6 +40,7 @@ def setup(): # GPIO initialization, GPIO motor cannot be controlled without init
         pwm_B = GPIO.PWM(Motor_B_EN, 1000)
     except:
         pass
+
 def motor_A(direction, speed): # The function used to control the motor of port A
     if direction == 1:
         GPIO.output(Motor_A_Pin1, GPIO.HIGH)
@@ -50,6 +52,7 @@ def motor_A(direction, speed): # The function used to control the motor of port 
         GPIO.output(Motor_A_Pin2, GPIO.HIGH)
         pwm_A.start(100)
         pwm_A.ChangeDutyCycle(speed)
+
 def motor_B(direction, speed): # The function used to control the motor of port B
     if direction == 1:
         GPIO.output(Motor_B_Pin1, GPIO.HIGH)
@@ -90,8 +93,6 @@ def left(input):
     time.sleep(abs(input)*ratio)
     motorStop()
     
-''' Control A and B motors to rotate at full speed for 3 seconds
-'''
 if __name__ =="__main__":
     forward()
     time.sleep(3)
@@ -101,4 +102,4 @@ if __name__ =="__main__":
     time.sleep(3)
     right(90)
     time.sleep(3)
-''' Control A and B motors to rotate in opposite directions at full speed for 3 seconds'''
+
