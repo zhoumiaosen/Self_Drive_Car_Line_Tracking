@@ -45,6 +45,9 @@ python src/One_Line_Tracking.py
 Raspberry pi 4 B:<br>
 <img src="assets/Raspberry_pi_4.png" alt="Diagram" width="250">
 
+Adeept Motor Hat V2:<br>
+<img src="assetsAdeept Motor Hat V2.png" alt="Diagram" width="250">
+
 #### Robot Car
 Robot car front:<br>
 <img src="assets/car_front.png" alt="Diagram" width="250">
