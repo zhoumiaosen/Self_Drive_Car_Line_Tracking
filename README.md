@@ -41,11 +41,11 @@ Run car with one cmd:
 python src/One_Line_Tracking.py
 ```
 ### 2. Hardware	
-## Control Board
+#### Control Board
 Raspberry pi 4 B:<br>
 <img src="assets/Raspberry_pi_4.png" alt="Diagram" width="250">
 
-## Robot Car
+#### Robot Car
 Robot car front:<br>
 <img src="assets/car_front.png" alt="Diagram" width="250">
 
