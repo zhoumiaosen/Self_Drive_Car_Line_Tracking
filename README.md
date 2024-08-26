@@ -64,8 +64,12 @@ Follow Line Moving:
 https://github.com/user-attachments/assets/ff69ae37-35f4-49bf-8366-5d5ad6ffc160
 
 ## Next Steps
-- **AI Model Deploy:**
+- **AI Model Deploy :**
  Experiment with neural network architectures to improve car self drive performance.
+- **End-to-End AI System :**
+Consider exploring end-to-end learning approaches where a neural network directly controls the robot based on raw camera input.
+- **Reinforcement Learning :**
+Experiment with reinforcement learning to further advance your project into a more complex AI-driven system.
 
 ## Contributing
 Contributions are welcome! Please fork the repository and create a pull request to contribute to the project.
